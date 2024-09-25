@@ -124,6 +124,14 @@ sudo podman run -d --name mydb \
     container-registry.oracle.com/database/free:latest
 ```
 
+上のコマンドを実行後に ```sudo docker logs -f <コンテナID>```（Docker の場合）もしくは ```sudo docker logs -f <コンテナID>```（Podman の場合）でログを確認し、以下のメッセージが表示されたら正しくテーブルとデータが作成されています。
+
+```
+**********************************
+環境準備が完了しました
+**********************************
+```
+
 コンテナに ```docker/podman exec ...``` で接続後に SQL*Plus で DB に接続することもできますが、外部から SQL Developer などの Oracle クライアントツールを使って接続する方が楽だと思います。以下に接続情報を示します。
 
 - ホスト名：（Docker/Podmanを動作させているホストサーバーのホスト名またはIPアドレス）
