@@ -134,7 +134,7 @@ sudo podman run -d --name mydb \
 
 コンテナに ```docker/podman exec ...``` で接続後に SQL*Plus で DB に接続することもできますが、外部から SQL Developer などの Oracle クライアントツールを使って接続する方が楽だと思います。以下に接続情報を示します。
 
-- ホスト名：（Docker/Podmanを動作させているホストサーバーのホスト名またはIPアドレス）
+- ホスト名：（Docker/Podman を動作させているホストサーバーのホスト名または IP アドレス）
 - ポート番号：1521
 - サービス名：FREEPDB1
 - ユーザー名：sqltune
